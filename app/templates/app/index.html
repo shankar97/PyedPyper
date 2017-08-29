@@ -1,0 +1,71 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Django</h1>
+    <p class="lead">Django is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="https://www.djangoproject.com/" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            Django gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="http://www.djangobook.com/en/2.0/index.html">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <section id = 'content1'></section>
+        <p>The Python Package Index is a repository of software for the Python programming language.</p>
+        <p><a class="btn btn-default" href="https://pypi.python.org/pypi">Learn more &raquo;</a></p>
+    </div>
+
+</div>
+
+{% endblock %}
+
+<script>
+
+  d3.scale.linear()
+          .domain([0 , 60])
+          .range([0 width]):
+
+  d3.svg.axis()
+        .ticks(15)
+        .scale(widthScale):
+
+  d3.csv("app/static/data_table/COM_HEAL.csv",fucntion(data)
+         (
+          var canvas = d3.select("section id = 'content1'").append("svg")
+                        .attr("width",500)
+                        .attr("height",500)
+
+              canvas.selectAll("rect")
+                    .data(data)
+                    .enter()
+                        .append("rect")
+                        .attr("width",20)
+                        .attr("height",fucntion(d) (return d.birth_rate * 10:))
+                        .attr("x", function(d, i) (return i * 50:))
+                        .attr("y", 400)
+                        .attr("fill", "blue"):
+
+              canvas.selectAll("text")
+                    .data(data)
+                    .enter()
+                      .append("text")
+                      .attr("fill","white")
+                      .attr("x", function(d, i) (return i * 50:))
+                      .attr("y", 400)
+                      .text(fucntion(d) (return d.community_area_number:))
+
+          )
+        )
+
+
+</script>
